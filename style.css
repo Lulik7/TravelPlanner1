@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;
+    margin: 2rem;
+}
+#wall {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+
+.trip-card {
+    padding: 1.5rem 1rem;
+    border: 1px solid #ccc;
+    border-left: 6px solid #3a86ff; 
+    background: repeating-linear-gradient(
+            white,
+            white 28px,
+            #d3d3d3 29px
+    );
+    border-radius: 4px;
+    position: relative;
+    width: 220px;
+    font-family: 'Courier New', monospace;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trip-card::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    width: 8px;
+    height: calc(100% - 20px);
+    background: radial-gradient(circle at center, #666 2px, transparent 3px) repeat-y;
+    background-size: 8px 30px;
+}
+
+form {
+    display: none;
+    margin-top: 1rem;
+    gap: 1rem;
+    flex-direction: column;
+    max-width: 400px;
+}
+form input {
+    padding: 0.5rem;
+}
+
+
+
+
