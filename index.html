@@ -1,10 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Planner App</title>
+    <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
-$END$
+<h1>🧳 Travel Planner</h1>
+<button id="addBtn">Add Travel</button>
+
+<form id="travelForm">
+    <input type="text" id="to" placeholder="To (Destination)" required />
+    <input type="date" id="start" required />
+    <input type="date" id="finish" required />
+    <input type="number" id="budget" placeholder="Budget ($)" required />
+    <button type="submit">Submit</button>
+</form>
+
+<div id="wall"></div>
+
+
+<script src="travel-planner.js"></script>
 </body>
 </html>
